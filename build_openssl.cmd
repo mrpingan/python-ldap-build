@@ -12,8 +12,6 @@ if errorlevel 1 exit /B 1
 tar -xf %OPENSSL_VER%.tar.gz
 if errorlevel 1 exit /B 1
 
-git apply -p1 --verbose --directory=%OPENSSL_VER% openssl.diff
-if errorlevel 1 exit /B 1
 
 cd %OPENSSL_VER%
 if errorlevel 1 exit /B 1
